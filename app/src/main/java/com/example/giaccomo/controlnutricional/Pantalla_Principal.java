@@ -1,13 +1,12 @@
 package com.example.giaccomo.controlnutricional;
 
-import android.support.v7.app.ActionBar;
-import android.content.res.Configuration;
+
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -20,7 +19,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Pantalla_Inicio extends AppCompatActivity {
+public class Pantalla_Principal extends AppCompatActivity {
 
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
@@ -33,16 +32,14 @@ public class Pantalla_Inicio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla__inicio);
+        setContentView(R.layout.activity_pantalla__principal);
 
         mDrawerList = (ListView)findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
-        myActionBar = getSupportActionBar();
         btnAbrirMenu = (Button)findViewById(R.id.btnAbrirMenu);
 
         addDrawerItems();
-
 
     }
 
@@ -62,7 +59,7 @@ public class Pantalla_Inicio extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Pantalla_Inicio.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Pantalla_Principal.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -88,4 +85,5 @@ public class Pantalla_Inicio extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

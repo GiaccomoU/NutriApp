@@ -9,5 +9,6 @@
     <string name="registrarse">Registrarse</string>
     <string name="title_activity_pantalla__registro">Pantalla_Registro</string>
     <string name="server_client_id">"868475977692-92a8cnpsktgupnriqg57kr63dkg4vp08.apps.googleusercontent.com"</string>
+    <string name="title_activity_pantalla__principal">Pantalla_Principal</string>
 
 </resources>

@@ -10,7 +10,7 @@
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/barra"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_width="match_parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:background="#85cf95"
@@ -34,11 +34,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="Aquí puedes ver las calorías consumidas durante el día"
+                android:text="18 de Febrero, 2016"
                 android:textSize="24sp"
                 android:gravity="center"
-                android:layout_marginTop="100dp"/>
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
 
 
         </RelativeLayout>
