@@ -10,5 +10,8 @@
     <string name="title_activity_pantalla__registro">Pantalla_Registro</string>
     <string name="server_client_id">"868475977692-92a8cnpsktgupnriqg57kr63dkg4vp08.apps.googleusercontent.com"</string>
     <string name="title_activity_pantalla__principal">Pantalla_Principal</string>
+    <string name="title_activity_pantalla__agregar__alimento">Pantalla_Agregar_Alimento</string>
+    <string name="title_activity_pantalla__agregar__ejercicio">Pantalla_Agregar_Ejercicio</string>
+    <string name="title_activity_pantalla__crear__alimento">Pantalla_Crear_Alimento</string>
 
 </resources>

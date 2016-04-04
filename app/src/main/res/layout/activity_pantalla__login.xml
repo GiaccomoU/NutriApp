@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#81e2a6"
-    xmlns:xlmns="http://schemas.android.com/apk/res/android">
+    xmlns:xlmns="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.giaccomo.controlnutricional.Pantalla_Login">
 
     <EditText
         android:layout_width="290dp"
