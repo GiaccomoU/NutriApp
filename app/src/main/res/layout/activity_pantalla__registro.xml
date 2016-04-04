@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+xmlns:xlmns="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:background="@drawable/barra_superior"/>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:background="#b8b84a"
+        android:layout_below="@+id/myRectangleView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/DatosPrincipales">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:background="#9d8ae4"
+        android:layout_below="@+id/DatosPrincipales"
+        android:layout_alignParentStart="true"
+        android:id="@+id/DatosPersonales"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:background="#94cf83"
+        android:layout_below="@+id/DatosPersonales"
+        android:layout_alignParentStart="true"
+        android:id="@+id/NvlActividad">></RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
