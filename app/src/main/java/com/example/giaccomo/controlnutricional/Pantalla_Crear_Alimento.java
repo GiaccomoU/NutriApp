@@ -1,6 +1,7 @@
 package com.example.giaccomo.controlnutricional;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -57,7 +58,8 @@ public class Pantalla_Crear_Alimento extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Pantalla_Crear_Alimento.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Pantalla_Crear_Alimento.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                selectItem(position);
             }
         });
     }
@@ -82,5 +84,25 @@ public class Pantalla_Crear_Alimento extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void selectItem(int position){
+        Intent intent;
+        switch (position){
+            case 0:
+                intent = new Intent(this, Pantalla_Principal.class);
+                startActivity(intent);
+                break;
+            case 1:
+                intent = new Intent(this, Pantalla_Mi_Perfil.class);
+                startActivity(intent);
+                break;
+            case 2:
+                break;
+            case 3:
+                intent = new Intent(this, Pantalla_Login.class);
+                startActivity(intent);
+                break;
+        }
     }
 }

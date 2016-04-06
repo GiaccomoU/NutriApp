@@ -1,6 +1,5 @@
 package com.example.giaccomo.controlnutricional;
 
-
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,16 +10,15 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
-public class Pantalla_Principal extends AppCompatActivity {
+public class Pantalla_Mi_Perfil extends AppCompatActivity {
 
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
@@ -33,7 +31,7 @@ public class Pantalla_Principal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla__principal);
+        setContentView(R.layout.activity_pantalla__mi__perfil);
 
         mDrawerList = (ListView)findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -41,7 +39,6 @@ public class Pantalla_Principal extends AppCompatActivity {
         btnAbrirMenu = (Button)findViewById(R.id.btnAbrirMenu);
 
         addDrawerItems();
-
     }
 
     public void sacarMenuLateral(View v){
@@ -60,7 +57,7 @@ public class Pantalla_Principal extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Pantalla_Principal.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Pantalla_Crear_Alimento.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
                 selectItem(position);
             }
         });
@@ -92,10 +89,10 @@ public class Pantalla_Principal extends AppCompatActivity {
         Intent intent;
         switch (position){
             case 0:
+                intent = new Intent(this, Pantalla_Principal.class);
+                startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(this, Pantalla_Mi_Perfil.class);
-                startActivity(intent);
                 break;
             case 2:
                 intent = new Intent(this, Pantalla_Crear_Alimento.class);
@@ -107,5 +104,6 @@ public class Pantalla_Principal extends AppCompatActivity {
                 break;
         }
     }
-
 }
+
+

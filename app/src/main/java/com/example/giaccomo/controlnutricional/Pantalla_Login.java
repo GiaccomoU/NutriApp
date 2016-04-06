@@ -1,10 +1,12 @@
 package com.example.giaccomo.controlnutricional;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.PasswordTransformationMethod;
+import android.view.View;
 import android.widget.EditText;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
@@ -132,6 +134,11 @@ public class Pantalla_Login extends AppCompatActivity {
 
 
 
+    }
+
+    public void login(View v){
+        Intent intent = new Intent(this, Pantalla_Registro.class);
+        startActivity(intent);
     }
 
 }
